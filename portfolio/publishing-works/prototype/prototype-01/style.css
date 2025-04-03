@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap');
+
+/* Reset CSS - S */
+*{ 
+  margin:0; padding: 0;
+  box-sizing: border-box; 
+}
+html {scroll-behavior: smooth;}
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+a {text-decoration: none;}
+ul, li {list-style: none;}
+/* Reset CSS - S */
+
+/* Common CSS - S */
+.wrap {background-color: #fff;}
+section {padding: 100px 0;}
+.inner{width: 1280px; margin: 0 auto;}
+/* Common CSS - E */
+
+/************
+ Header - S 
+*************/
+.header {
+  position: fixed; top: 0; left: 0; z-index: 100;
+  width: 100%;
+  transition: 0.5s;
+}
+.header-inner {
+  width: 1280px; height: 100px; margin: 0 auto;
+  line-height: 100px;
+  overflow: hidden; 
+}
+.logo {
+  float: left;
+  width: 205px; height: 30px; margin-top: 30px;
+  text-indent: -9999px;
+  background-image: url(./img/logo-w.png);
+}
+.logo img {
+  vertical-align: middle;
+  margin-left: 10px;
+}
+/* GNB - S */
+.gnb {float: right;}
+.gnb li{float: left;}
+.gnb a {
+  padding: 10px 20px;
+  text-align: center; color: #fff;
+  position: relative;
+  transition: 0.5s;
+}
+.gnb a:hover {color:#ffd700;}
+header.active .gnb a:before {background-color: #777;}
+/* GNB - E */
+/************
+ Header - E 
+*************/
+
+/************
+ Main - S 
+*************/
+/* Main Common - S */
+section header{margin-bottom: 14px;}
+section h2 {
+  display: inline-block;
+  font-size: 3em;
+  position: relative; z-index: 1;
+}
+section h2:after {
+  content: '';
+  position: absolute; left: 0; bottom: 10px; z-index: -1;
+  width: 100%; height: 20px;
+  background-color: #E6EC51; 
+}
+section p {
+  margin-bottom: 30px;
+  font-size: 1.6em; line-height: 1.8em; text-align: justify;
+}
+section p span {
+  color: #fff;
+  background-color: #000;
+}
+section figure{
+  height: 450px;
+  overflow: hidden;
+  border-radius: 50px 5px 50px 10px;
+}
+section img {
+  width: 100%; 
+  transition: 0.7s;
+}
+section img:hover {transform: scale(1.05);}
+/* Main Common - E */
+
+/* VISUAL - S */
+.visual {
+  width: 100%; height: 600px;
+  color:#fff; text-align: center;
+  background-image: url(./img/visual-img.png);
+  position: relative;
+}
+.visual-txt{
+  position: absolute; left: 50%; top: 50%;
+  transform: translate(-50%, -30%);
+}
+.visual h2:after{display: none;}
+.visual h2 {
+  display: block;
+  font-size: 7em;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+.visual span {font-weight: 300; font-size: 1.7em; color:#fff;}
+
+/* VISUAL - E */
+/************
+ Main - E
+*************/
+
+/************
+ Footer - S
+*************/
+/* Footer */
+.footer {
+  height: 300px; padding: 100px 50px;
+  text-align: center; color: #777;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+.f-logo { text-align: center; }
+.f-logo a{
+  display: inline-block;
+  width: 205px; height: 30px; margin-top: 30px;
+  text-indent: -9999px;
+  background-image: url(./img/logo-b.png);
+}
+.footer .inner div {
+  float: left; height: 100px;
+  text-align: center;
+}
+.footer .inner div span{
+  display: block;
+  font-size: 1.5em;
+}
+.footer .inner div:nth-child(1) {
+  width: 30%;
+}
+.footer .inner div:nth-child(2) {
+  width: 30%;
+}
+.footer .inner div:nth-child(3) {
+  width: 40%;
+}
+/* Fixed Footer Reveal - S */
+.footer {
+  width: 100%; min-width: 1280px;
+  position: fixed; bottom: 0; left: 0; z-index: -1;
+}
+.korean {
+  margin-bottom: 300px;
+}
+/* Fixed Footer Reveal - E */
+/************
+ Footer - E
+*************/
+
+
+/* Active Class - S */
+.header.active {
+  background-color: #fff;
+  height: 70px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.header.active .gnb {
+  line-height: 70px;
+}
+.header.active .gnb a {
+  color: #000;
+}
+.header.active .logo {
+  margin-top: 23px;
+  background-image: url(./img/logo-b.png);
+  transform: scale(0.8);
+}
+/* Active Class - E */
+
+/* Go to top - S*/
+.gototop {
+  position: fixed; right: 20px; bottom: -20px;
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  text-align: center; line-height: 45px; font-size: 1.5em; color: #fff;
+  cursor: pointer;
+  background: linear-gradient(360deg, #5f7941, #ffd700);
+  transition: 0.5s;
+  opacity: 0;
+}
+.gototop.active {
+  bottom: 20px;
+  opacity: 1;
+}
+/* Go to top - E*/

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Phonecase Price</title>
+  
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  <!-- Google Icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section class="price-inner">
+    <h3>Phonecase Price</h3>
+    <div class="items">
+        <div class="item">
+            <div class="title active">Apple iPhone</div>
+            <div class="content">
+                <span>Clear Silicone Case <em>$15</em></span>
+                <span>TPU Bumper Case <em>$18</em></span>
+                <span>Slim Matte Hard Case <em>$20</em></span>
+                <span>Leather Wallet Case <em>$25</em></span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">Samsung Galaxy</div>
+            <div class="content">
+              <span>Shockproof Heavy Case <em>$28</em></span>
+              <span>Transparent Hard Case <em>$10</em></span>
+              <span>Flip Cover Case <em>$20</em></span>
+              <span>Carbon Fiber Case <em>$15</em></span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">Google Pixel</div>
+            <div class="content">
+                <span>Glitter Liquid Case <em>$18</em></span>
+                <span>Marble Pattern Case <em>$16</em></span>
+                <span>Rugged Armor Case <em>$22</em></span>
+                <span>Fabric Cloth Case <em>$14</em></span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="title">OnePlus</div>
+            <div class="content">
+                <span>Wood Texture Case <em>$18</em></span>
+                <span>Ultra-thin Silicone Case <em>$12</em></span>
+                <span>Hybrid Armor Case <em>$25</em></span>
+                <span>Waterproof Case <em>$32</em></span>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<script>
+$('.item:nth-of-type(1) .content').show()
+$('.title').click(function(){
+    $(this).next().slideToggle()
+    $(this).parent('.item').siblings('.item').children('.content').slideUp()
+
+    $(this).parent('.item').siblings('.item').children('.title').removeClass('active')
+    $(this).toggleClass('active')
+})
+</script>
+
+
+</body>
+</html>

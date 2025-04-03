@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+/* FontAwesome CDN 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*{margin:0;}
+body {
+  font-weight: 300; color: #333; font-family: 'Noto Sans KR', sans-serif;
+  background-color: #000;
+}
+a {color: #222; text-decoration: none;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+em{font-style: normal;}
+
+/* netflix-fqa - S */
+.netflix-fqa {
+  display: flex; justify-content: center; align-items: center;
+  height: 100vh;
+}
+section article {width: 1000px; height: 500px;}
+.arti-header{
+  margin-bottom: 40px;
+  text-align: center;
+}
+.arti-header span{font-weight: 300; font-size: 24px; color: #fff;}
+.arti-header h1{font-size: 36px; line-height: 48px; color:#fff;}
+.arti-header h1 em{
+  margin-right: 40px;
+  font-weight: 700; color: #CD0301; 
+  position: relative;
+}
+.arti-header h1 em:after {
+  position: absolute; right: -40px; bottom: 0px;
+  content: url(./img/netflix-icon.png);
+}
+.content > div {
+  float: left;
+  height: 400px;
+  box-sizing: border-box;
+}
+.accordion {width: calc( 100% - 420px ); margin-right: 20px;}
+.txt-box-tit {
+  padding: 5px; padding-left: 15px; margin-bottom: 10px;
+  border-radius: 3px;
+  font-weight: 300; color: #fff; font-size: 18px; line-height: 32px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #2d2d2d;
+}
+.txt-box-tit:after {
+  content: '\f067';
+  float: right; margin-right: 10px;
+  font-family: fontawesome; 
+  transition: 0.3s;
+}
+.txt-box.active .txt-box-tit:after {transform: rotate(45deg);}
+.txt-box-tit:hover,
+.txt-box.active .txt-box-tit {
+  color: #fff;
+  background-color: #646464;
+}
+.txt-box-desc {
+  display: none;
+  padding: 0 10px 20px 10px;
+  color:#fff;
+}
+.txt-box.active .txt-box-desc {display: block;}
+.image {text-align: right}
+.image img {border-radius: 10px;}
+/* netflix-fqa - E */

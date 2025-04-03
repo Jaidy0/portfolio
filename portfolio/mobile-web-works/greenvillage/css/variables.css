@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Bootstrap Icon CDN */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+/* Font Family CDN */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
+
+
+:root{
+  /* Font Family */
+  --primary-kr: 'Noto Sans KR', sans-serif;
+  --primary-en: 'Roboto', sans-serif;
+  --logo-kr: 'Song Myung', serif;
+
+  /* Text Color */
+  --dark-black: #333;
+  --light-black: #555;
+  --dark-gray: #777;
+  --light-gray: #999;
+  --silver-gray: #DEDEDE;
+  --gloudy-gray: #eee;
+  --white-gray: #F9F9F9;
+
+  /* Object Color */
+  --dark-green: #246A20;
+  --green: #448940;
+  --light-green: #8FBD48;
+  --yellow-green: #E2DB63;
+  --beige: #F1ECDA;
+  --rose-pink: #E87374;
+
+  /* For Big Size Mobile & Tablet Device */
+  --slide-basis: 100vw;
+}
+

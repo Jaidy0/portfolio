@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* font-family: 'Caladea', serif; */
+
+/********** 
+COMMON - S 
+**********/
+a {text-decoration: none; color: inherit;}
+img {display: block;}
+body {font: 16px/1.2 'Noto Sans KR', "돋움", Dotum, AppleGothic, sans-serif; letter-spacing: -0.5px;}
+.inner {width: 1280px; min-width: 1280px; margin: 0 auto;}
+.hidden {
+  width: 0; height: 0;
+  font-size: 0; line-height: 0; text-indent: -9999px;
+  position: absolute; left: -9999px;
+  overflow: hidden;
+}
+hr {display: none;}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.skip-nav a {
+  width: 100%; height: 40px;
+  text-align: center; line-height: 40px; color: #fff;
+  position: absolute; left: 0; top: -100px; z-index: 10000;
+  background-color: #534437;
+}
+.skip-nav a:focus {top: 0;}
+/********** 
+COMMON - E 
+**********/
+
+
+/********** 
+HEADER - S 
+**********/
+.header {
+  width: 100%; height: 84px; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: absolute; left: 0; top: 0; z-index: 1000;
+  background-color: rgba(0,0,0,0.25);
+}
+.logo {
+  float: left;
+  width: 171px; height: 61px; margin: 12px 52px 0 0;
+}
+.logo a {
+  display: block;
+  width: 100%; height: 61px;
+  text-indent: -9999px;
+  background-image: url(../img/logo-all.png);
+}
+.gnb {float: left;}
+.gnb > ul {}
+.gnb .depth1 {
+  float: left;
+  position: relative;
+}
+.gnb .depth1 > a {
+  display: block;
+  height: 84px; padding: 0 32px;
+  font-weight: 400; font-size: 18px; line-height: 84px; color: #fff;
+  z-index: 10000;
+}
+.gnb .depth1 > a:after {
+  content: "";
+  display: none;
+  width: 100%; height: 4px;
+  background-color: #ddc7b8;
+  position: absolute; left: 0;bottom: 0;
+}
+.gnb .depth1 > a:hover:after {display: block;}
+.gnb .depth2 {
+  display: none;
+  width: 100%; height: 280px; padding-top: 30px;
+  position: absolute; left: 0; top: 84px; z-index: 100;
+}
+.gnb .depth2 li {height: 35px;}
+.gnb .depth2 li a {
+  display: block;
+  height: 35px;
+  font-size: 15px; line-height: 35px; color: #777; text-align: center;
+  transition:0.3s;
+}
+.gnb .gnb-bg {
+  display: none;
+  width: 100%; height: 280px;
+  position: absolute; left: 0; top: 84px; z-index: 1;
+  background-color: #fff;
+}
+.depth1:hover .gnb{background-color: #fff;}
+.gnb:hover .depth2 {display: block;}
+.gnb:hover .gnb-bg {display: block;}
+.gnb .depth2 li a:hover {
+  color: #534437;
+  background-color: #f3e9e2;
+}
+.tnb {float: right;}
+.tnb .lang {
+  float: left;
+  width: 120px; margin-right: 10px;
+  font-size: 16px; line-height: 84px; color: rgba(255, 255, 255, 0.7); text-align: center;
+  position: relative; 
+}
+.tnb .lang div {
+  display: none;
+  width: 118px; height: 80px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  position: absolute; z-index: 10000; top: 60px;
+  background-color: rgba(0,0,0,0.7);
+}
+.tnb .lang div a{
+  display: block;
+  height: 40px;
+  line-height: 40px; text-align: center; font-size: 15px;
+}
+.tnb .lang:hover > p{color:#fff;}
+.tnb .lang:hover > div{display: block;}
+.tnb .lang a:hover {color:#ddc7b8;}
+.tnb > .sch{
+  float: right;
+  padding-top: 7px;
+  text-align: center;
+}
+.tnb .sch > a{
+  display: block;
+  width: 50px; height: 74px;
+  line-height: 84px; color:rgba(255,255,255,0.7);
+}
+.sch .material-symbols-outlined{font-size: 23px;}
+.tnb .sch > a:hover{color:#fff;}
+.tnb .sch.on div{display: block;}
+.tnb .sch-wrap{
+  display: none;
+  width: 100%; height: 200px;
+  position: absolute; top: 84px; left: 0;
+  background-color: #fff;
+}
+.sch-wrap .sch-wrap-inner{
+  width: 1280px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.tnb .sch-wrap legend{text-indent: -9999px;}
+.tnb .sch-write{
+float: left;
+height: 50px; margin-bottom: 10px;
+border-bottom: 1px solid #ddc7b8;
+overflow: hidden;
+box-sizing: border-box;
+}
+.tnb .sch-write-txt{
+  float: left;
+  width: 1200px; height: 50px; padding: 0;
+  border: none;
+  font-size: 18px; color: #777; 
+  outline: none;
+}
+.tnb .sch-btn{
+  float: left;
+  width: 40px; height: 60px;
+  padding: 0;
+  border: none;
+  color:#ddc7b8;
+  background-color: #fff;
+  cursor: pointer;
+}
+.tnb .sch-btn span{font-size: 30px; line-height: 50px;}
+.recommand{
+  width: 1280px; height: 30px;
+  font-size: 15px; line-height: 25px; color:#777;
+}
+.recommand p{
+  float: left;
+  margin-right: 15px;
+  font-weight: 700; 
+}
+.recommand li{
+  float: left;
+  font-weight: 400;
+  background-color: #eee;
+}
+.recommand li+li{
+  margin-left: 5px;
+}
+.recommand li:hover{
+  font-weight: 700;
+}
+/********** 
+HEADER - E 
+**********/
+
+/********** 
+FOOTER - S 
+**********/
+.footer {
+  width: 100%; height: 220px;
+  background-color: #333;
+}
+.footer .inner {
+  padding-top: 45px;
+}
+.f-logo {
+  float: left;
+  width: 171px; height: 61px; margin-right: 40px;
+  text-indent: -9999px;
+  background-image: url(../img/ft-logo.png);
+}
+.f-menu {float: left;}
+.f-menu li {
+  float: left;
+  height: 30px; margin-right: 30px;
+  position: relative;
+}
+.f-menu li+li:after {
+  content: "";
+  width: 1px; height: 14px;
+  background-color: #999;
+  position: absolute; left: -15px; top: 8px;
+}
+.f-menu li a {font-size: 14px; line-height: 30px; color: #999;}
+.f-menu li:first-child a {color: #ddc7b8;}
+.f-site {float: right;}
+.f-sns {margin-bottom: 10px;}
+.f-sns a{
+  float: left;
+  height: 40px; width: 40px;
+  text-indent: -9999px;
+  background-image: url(../img/sns-icons.png);
+}
+.f-sns a:nth-child(2){background-position: -40px 0px;}
+.f-sns a:nth-child(3){background-position: -80px 0px;}
+.f-sns a + a {margin-left: 16px;}
+.f-site > p {
+  float: right;
+  width: 75px; height: 49px;
+  text-indent: -9999px;
+  background-image: url(../img/science-tech-mark.png);
+  opacity: 0.5;
+}
+.f-area {
+  float: left;
+  line-height: 25px;
+}
+.f-area .f-addr li {
+  float: left;
+  margin-right: 10px;
+  font-size: 13px; color: #777;
+}
+.f-area .f-copy {font-size: 12px; color: #555;}
+/********** 
+FOOTER - E 
+**********/

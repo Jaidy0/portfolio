@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+*{margin:0; padding:0;}
+body {
+  display: flex; justify-content: center; align-items: center;
+  height: 100vh;
+  font-weight: 300; font-family: 'Raleway', sans-serif; color: #222;
+  background-color: #ab8a7024;
+}
+a {text-decoration: none; color: #222;}
+.tab-inner {
+  height: 580px; padding: 20px 40px;
+  border-radius: 20px;
+  background-color: #fff; 
+}
+.tab-inner h1 {
+  margin-bottom: 40px;
+  font-weight: 700; font-size: 40px; line-height: 80px; text-align: center;
+}
+input[name=tabmenu] {display: none;}
+.tabs {
+  width: 800px; height: 400px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.items-wrap {
+  width: 2400px; height: 400px;
+  position: absolute; top: 0; left: 0;
+  transition: 0.5s;
+}
+.item {
+  float: left;
+  display: flex;
+  width: 800px; height: 400px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.item img {
+  width: 400px; height: 400px;
+  border-radius: 20px;
+}
+.item-txt{
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 40px 0px 40px 20px;
+}
+.item-txt .item-tit{
+  font-size: 28px; line-height: 40px;
+  margin-bottom: 10px;
+}
+.item-txt .item-desc{color: #777; text-align:justify;}
+.btn {text-align: center;}
+.btn label {
+  width: 10px;
+  height: 10px;
+  background-color: #CCB09A;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+input[id=tab1]:checked ~ .tabs .items-wrap {left: 0;}
+input[id=tab2]:checked ~ .tabs .items-wrap {left: -800px;}
+input[id=tab3]:checked ~ .tabs .items-wrap {left: -1600px;}
+input[id=tab1]:checked ~ .btn label[for=tab1],
+input[id=tab2]:checked ~ .btn label[for=tab2],
+input[id=tab3]:checked ~ .btn label[for=tab3] {
+  width: 25px;
+  background-color: #AB8A70;
+  border-radius: 5px;
+}

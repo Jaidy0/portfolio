@@ -1,0 +1,67 @@
+.uk-link, a{
+
+}
+
+.uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover{
+  text-decoration: none;
+}
+
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  font-family: 'Poppins', 'Pretendard', sans-serif, "돋움",  Dotum, AppleGothic;
+}
+*+address, *+dl, *+fieldset, *+figure, *+ol, *+p, *+pre, *+ul{
+  margin: 0;
+}
+ol, ul{
+  padding: 0;
+}
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6{
+  color:#fff;
+}
+em{
+  color:#fff;
+}
+.uk-lightbox.uk-open{
+  z-index: 1000000;
+}
+.uk-lightbox-toolbar-icon{
+  color:#fff;
+  width: 50px; height: 50px;
+  border-radius: 25px;
+  background-color: rgba(135, 170, 235, 0.7);
+}
+.uk-lightbox-toolbar{
+  padding: 20px 20px 30px 20px;
+  background-color: rgba(0,0,0,0);
+  text-align: center!important;
+}
+.uk-lightbox-iframe{
+  height: 70%;
+}
+.uk-transition-slide-top{
+  --uk-translate-y:100%;
+}
+.uk-position-top{
+  top: auto;
+  bottom: 0;
+}
+.uk-lightbox-button{
+  width: 40px; height: 40px;
+  border-radius: 40px;
+  background-color: rgba(255,255,255,0.4);
+}
+@media (max-width: 768px) {
+  .uk-transition-slide-top{
+    --uk-translate-y:0%;
+  }
+  .uk-lightbox-button{
+    width: 30px; height: 60px;
+    border-radius: 0;
+    background-color: rgba(255,255,255,0.3);
+    opacity: 1;
+  } 
+  .uk-position-medium{
+    margin: 0;
+  }
+}

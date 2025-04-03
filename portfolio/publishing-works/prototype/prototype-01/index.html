@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>OSULLOC</title>
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  
+  <div class="wrap">
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="logo"><a href="#">OSULLOC</a></h1>
+        <nav class="gnb">
+          <ul>
+            <li><a href="#">OUR BRAND</a></li>
+            <li><a href="#">BRAND STORY</a></li>
+            <li><a href="#">ESTATE</a></li>
+            <li><a href="#">PRODUCT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="visual inner">
+        <div class="visual-txt">
+        <h2>OSULLOC</h2>
+        <span>STEEP A PIECE OF NATURE</span>
+        </div>
+      </section>
+      <section class="nature inner">
+        <header>
+          <h2>STEEP A PIECE OF NATURE</h2>
+        </header>          
+        <p>
+          SUN, WIND, WATER, SOIL, AND FOG.
+          OSULLOC TEAS GROW BY ABSORBING MOTHER NATURE’S GIFTS THAT ARE UNIQUE TO JEJU ISLAND. TO REDISCOVER YOUR TEA MOMENT, STEEP OSULLOC TEA.
+          OSULLOC BRINGS A SENSE OF NATURE AND WELLNESS TO EVERY TEATIME.
+          OUR PREMIUM-QUALITY TEAS DELIVER SURPRISINGLY DELICATE SCENTS AND FLAVORS.
+          TO REDISCOVER A PERFECT TEA FOR EVERY OCCASION AND MOOD, JUST STEEP OSULLOC TEA AND SAVOR A PIECE OF NATURE.
+        </p>
+        <figure><img src="./img/img-001.png" alt="'Steep a Piece of Nature' section picture"></figure>
+      </section>
+      <section class="culture inner">
+        <header>
+          <h2>REVIVING THE TEA CULTURE</h2>
+        </header>          
+        <p>
+          IN 1979, OSULLOC STARTED CULTIVATING ITS FIELDS ON KOREA’S JEJU ISLAND, A NATURAL SETTING OPTIMAL FOR GROWING TEA. THE FOUNDER OF AMOREPACIFIC GROUP, JANGWON SUH SUNG-WHAN, BEGAN THIS JOURNEY WITH HIS STRONG COMMITMENT TO REVIVING KOREAN TEA CULTURE.
+          IT TOOK MANY YEARS TO HARNESS THE NATURAL ENVIRONMENT AND MAKE THE BARREN ISLAND GREEN. FIELD BY FIELD, OSULLOC ESTABLISHED ITSELF AS KOREA’S NUMBER-ONE TEA BRAND.
+        </p>
+        <figure><img src="./img/img-002.png" alt="'REVIVING THE TEA CULTURE' section picture"></figure>
+      </section>
+      <section class="blessed inner">
+        <header>
+          <h2>BLESSED BY NATURAL RESOURCES</h2>
+        </header>          
+        <p>
+          JEJU ISLAND IN 1979 WAS BARREN LAND, COVERED ONLY IN ROCKS AND WHIPPED BY WILD WINDS FROM THE SURROUNDING OCEAN. IN THE BEGINNING, IT WAS NO-MAN’S-LAND EVEN BY LOCAL STANDARDS.
+          USING MODERN TECHNOLOGY TO MAXIMIZE ALL ASPECTS OF THE ISLAND’S NATURAL RESOURCES AT EVERY STEP IN THE CULTIVATION PROCESS, OSULLOC HAS ESTABLISHED A HIGH STANDARD FOR QUALITY AND SERVICE.
+        </p>
+        <figure><img src="./img/img-003.png" alt="'BLESSED BY NATURAL RESOURCES' section picture"></figure>
+      </section>
+      <section class="about inner">
+        <header>
+          <h2>ABOUT JEJU ISLAND</h2>
+        </header>          
+        <p>
+          CALLED “ISLAND OF THE GODS” BY THE LOCAL PEOPLE, OVAL-SHAPED JEJU ISLAND IS LOCATED IN THE SOUTH OF THE KOREAN PENINSULA. IT WAS FORMED APPROXIMATELY 2 MILLION YEARS AGO WHEN AN UNDERWATER VOLCANO ERUPTED.
+          IN 2007, VOLCANIC JEJU ISLAND, WITH ITS ICONIC LAVA TUBES, WAS RECOGNIZED AS A UNESCO WORLD HERITAGE SITE DUE TO ITS UNIQUE FEATURES.
+        </p>
+        <figure><img src="./img/img-004.png" alt="'ABOUT JEJU ISLAND' section picture"></figure>
+      </section>
+      <section class="korean inner">
+        <header>
+          <h2>KOREAN TEA CULTURE</h2>
+        </header>          
+        <p>
+          WE ARE PROUD PIONEERS IN PRESERVING KOREAN TEA CULTURE, WHICH HAS EXISTED FOR NEARLY 2,000 YEARS.
+          TEAS WERE FIRST ENJOYED BY KOREA’S ROYAL FAMILY, MONKS, AND NOBLES. THROUGHOUT HISTORY, TEAS HAVE ALSO PLAYED A PART IN MANY ASPECTS OF KOREAN LITERATURE, POETRY, DRAMA, ART, AND MUSIC. PEOPLE SERVE TEA TO WELCOME GUESTS.
+          ONCE IT WAS INTRODUCED INTO KOREAN CULTURE, TEA GRADUALLY BECAME AN IMPORTANT PART OF DAILY RITUALS AT EVERY SOCIETAL LEVEL.
+        </p>
+        <figure><img src="./img/img-005.png" alt="'KOREAN TEA CULTURE' section picture"></figure>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="inner">
+        <div class="f-logo">
+          <a href="#">OSULLOC</a>
+        </div>
+        <div class="phone">
+          <span>Call.</span>
+          080-805-5555
+        </div>
+        <div class="address">
+          <span>Address.</span>
+          Osulloc Tea Museum
+          15, Osullocnam-ro, Andeok-myeon, Seogwipo-si, Jeju-do
+          63521, South Korea
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <aside>
+    <a href="#" class="gototop"><i class="fa fa-angle-up"></i></a>
+  </aside>
+
+<script>
+    $(window).scroll(function(){
+    if($(window).scrollTop() > 50) {
+      $('.header, .gototop').addClass('active')
+    }
+    else {
+      $('.header, .gototop').removeClass('active')
+    }
+  })
+</script>
+
+</body>
+</html>

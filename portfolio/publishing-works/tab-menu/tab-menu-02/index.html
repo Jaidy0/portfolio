@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Best Menu</title>
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+
+  <div class="section">
+    <div class="sec-header">
+      <h1>베스트 메뉴 <span>BEST  MENU</span></h1>
+      <input type="text" placeholder="어떤 메뉴를 찾으시나요?">
+    </div>
+    <ul class="tab-btn">
+      <li class="active" data-alt="tab1">COFFEE</li>
+      <li data-alt="tab2">JUICE</li>
+      <li data-alt="tab3">BREAD</li>
+      <li data-alt="tab4">SALAD</li>
+      <li data-alt="tab5">SANDWICH</li>
+    </ul>
+
+    <div class="tabs">
+      <div class="tab active" id="tab1">
+        <h2>COFFEE</h2>
+        <img src="./img/blockcoffee.png" alt="블랙 커피 이미지">
+        <p>
+          <strong>Long Black Coffee</strong>
+          에스프레소보다 짧게 추출한 리스트레또샷을 넣어 깊은 풍미와 풍부한 크레마를 느낄 수 있는 매력적인 커피
+        </p>
+      </div>
+      <div class="tab" id="tab2">
+        <h2>JUICE</h2>
+        <img src="./img/fruitsjuice.png" alt="과일 주스 이미지">
+        <p>
+          <strong>Strawberry & Peach Juice</strong>
+          딸기와 복숭아의 상큼함이 조화롭게 어우러져 달콤하고 시원하게 즐길 수 있는 과일 주스
+        </p>
+      </div>
+      <div class="tab" id="tab3">
+        <h2>BREAD</h2>
+        <img src="./img/croabread.png" alt="크로아상 이미지">
+        <p>
+          <strong>Coconut Croissant</strong>
+          향긋한 코코넛칩 토핑과 카야잼으로 채운 크루아상
+        </p>
+      </div>
+      <div class="tab" id="tab4">
+        <h2>SALAD</h2>
+        <img src="./img/salad.png" alt="샐러드 이미지">
+        <p>
+          <strong>Chicken Caesar Salad</strong>
+          닭가슴살, 고구마, 단호박, 계란이 담긴 담백한 샐러드
+        </p>
+      </div>
+      <div class="tab" id="tab5">
+        <h2>SANDWICH</h2>
+        <img src="./img/sandwich.png" alt="샌드위치 이미지">
+        <p>
+          <strong>B.E.L.T Sandwich</strong>
+          구수한 호밀 식빵에 베이컨, 계란과 양상추, 토마토를 듬뿍 넣어 풍성한 샌드위치
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $('.tab-btn li').click(function(){
+      
+      $(this).addClass('active')
+      $(this).siblings().removeClass('active')
+      
+      $('.tabs .tab').removeClass('active')
+      $('#'+$(this).attr('data-alt')).addClass('active')
+    })
+  </script>
+
+</body>
+</html>
