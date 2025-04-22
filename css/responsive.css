@@ -30,8 +30,8 @@
     align-items: center;
     width: 30px;
     height: 30px;
-    border: 1px solid #ccc;
-    border-radius: 40px;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 40px; */
     font-size: 20px;
     line-height: 50px;
     color: #999;
@@ -39,13 +39,14 @@
     cursor: pointer;
     transition: all 0.3s;
   }
-  .gnb .gnb-btn.active {
+  .gnb .gnb-plus-btn.active {
     position: fixed;
     z-index: 10000000;
     right: 20px;
     top: auto;
     transform: rotate(45deg);
   }
+
   .gnb-wrap {
     width: 0;
     height: 100vh;

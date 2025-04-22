@@ -70,11 +70,12 @@ $(".desi-tab li").click(function () {
   $(".design-box").removeClass("active");
   $("#" + $(this).attr("data-alt")).addClass("active");
 });
-$(".gnb-btn").click(function () {
+$(".gnb-plus-btn").click(function () {
   $(this).toggleClass("active");
   $(".gnb-wrap").toggleClass("active");
   $("body").toggleClass("modal-open");
 });
+
 $(".gnb-wrap a").click(function () {
   $(this)
     .parents(".gnb-wrap.active")
@@ -85,4 +86,20 @@ $(".gnb-wrap a").click(function () {
 $(".modal-close-btn").click(function () {
   $(".modal-overlay").removeClass("active");
   $("body").removeClass("modal-open");
+});
+
+// Modal functionality
+const modalOverlay = document.querySelector(".modal-overlay");
+const modal = document.querySelector(".modal");
+
+modalOverlay.addEventListener("click", function (e) {
+  if (e.target === modalOverlay) {
+    modalOverlay.classList.remove("active");
+    document.body.classList.remove("modal-open");
+  }
+});
+
+const modalCloseBtn = document.querySelector(".modal-close-btn");
+modalCloseBtn.addEventListener("click", function () {
+  modalOverlay.classList.remove("active");
 });
