@@ -15,7 +15,7 @@ section {
   font-weight: 600;
   font-size: 26px;
   line-height: 36px;
-  color: #555;
+  color: #999;
 }
 .sec-sub-tit {
   display: block;
@@ -120,6 +120,22 @@ section {
   animation-fill-mode: forwards;
   opacity: 0;
 }
+.home-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.3;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.3s;
+}
+.home-btn:hover {
+  color: #fff;
+  background-color: #87aaeb;
+}
 /* HOME - E */
 
 /* ABOUT - S */
@@ -141,12 +157,21 @@ section {
 .about-txt {
   width: 55%;
 }
+.about-txt-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 14px;
+}
 .about-info .about-info-tit {
   font-weight: 700;
   font-size: 30px;
   line-height: 42px;
   color: #333;
-  margin-bottom: 10px;
+
 }
 .about-info .about-info-list {
   display: flex;
@@ -183,7 +208,7 @@ section {
   color: #222;
 }
 .about-img {
-  width: 420px;
+  width: 480px;
   height: 588px;
   border-radius: 50%;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);

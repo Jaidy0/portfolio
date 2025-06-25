@@ -103,3 +103,22 @@ const modalCloseBtn = document.querySelector(".modal-close-btn");
 modalCloseBtn.addEventListener("click", function () {
   modalOverlay.classList.remove("active");
 });
+
+$(document).ready(function() {
+    // 모든 PDF 링크를 전체화면 모드로 설정
+    $('a[href$=".pdf"]').each(function() {
+        const $this = $(this);
+        const originalHref = $this.attr('href');
+        
+        // URL 파라미터 추가
+        const cleanUrl = originalHref.includes('#') ? 
+            originalHref : originalHref + '#toolbar=0&navpanes=0&view=FitH';
+        
+        $this.attr({
+            'href': cleanUrl,
+            'data-featherlight-variant': 'fullscreen-pdf',
+            'data-featherlight-iframe-width': '100vw',
+            'data-featherlight-iframe-height': '100vh'
+        });
+    });
+});

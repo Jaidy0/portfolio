@@ -365,3 +365,24 @@ FOOTER - E
 }
 
 /* MODAL- E */
+
+/* FEATHERLIGHT 설정 - S */
+.featherlight.fullscreen-pdf {
+    background: rgba(0, 0, 0, 0.95);
+}
+.featherlight.fullscreen-pdf .featherlight-content {
+    width: 100vw !important;
+    height: 100vh !important;
+    max-width: none !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+}
+.featherlight.fullscreen-pdf .featherlight-content iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+}
+/* FEATHERLIGHT 설정 - E */
