@@ -120,6 +120,11 @@ section {
   animation-fill-mode: forwards;
   opacity: 0;
 }
+.home-btn-wrap {
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+}
 .home-btn {
   display: inline-block;
   padding: 10px 20px;
@@ -140,7 +145,8 @@ section {
 
 /* ABOUT - S */
 .about {
-  background-color: #fcfbf8;
+  /* background-color: #fcfbf8; */
+  background-color: #fff;
 }
 .about .inner {
   display: flex;

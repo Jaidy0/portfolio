@@ -74,14 +74,19 @@ HEADER - S
 }
 .header .inner {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  justify-content: center;
   align-items: center;
+}
+.header.uiux-header .inner {
+  justify-content: space-between;
 }
 .logo {
   display: flex;
   align-items: center;
   width: 28%;
-  height: 100%;
+  /* height: 100%; */
+  height: 100px;
 }
 .logo a {
   display: block;
@@ -101,6 +106,10 @@ HEADER - S
 }
 .gnb-wrap {
   display: flex;
+  /* justify-content: space-between; */
+  justify-content: center;
+}
+.header.uiux-header .gnb-wrap {
   justify-content: space-between;
 }
 .gnb-wrap li {
