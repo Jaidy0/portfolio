@@ -145,8 +145,8 @@ section {
 
 /* ABOUT - S */
 .about {
-  /* background-color: #fcfbf8; */
-  background-color: #fff;
+  background-color: #fcfbf8;
+  /* background-color: #fff; */
 }
 .about .inner {
   display: flex;

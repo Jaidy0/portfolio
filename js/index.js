@@ -87,6 +87,9 @@ $(".modal-close-btn").click(function () {
   $(".modal-overlay").removeClass("active");
   $("body").removeClass("modal-open");
 });
+$(".side-modal-close-btn").click(function () {
+  $(".side-modal-overlay").removeClass("active");
+});
 
 // Modal functionality
 const modalOverlay = document.querySelector(".modal-overlay");
@@ -99,9 +102,25 @@ modalOverlay.addEventListener("click", function (e) {
   }
 });
 
+// Side Modal functionality
+// const sideModalOverlay = document.querySelector(".side-modal-overlay");
+const sideModal = document.querySelector(".side-modal");
+
+sideModalOverlay.addEventListener("click", function (e) {
+  if (e.target === sideModalOverlay) {
+    sideModalOverlay.classList.remove("active");
+  }
+});
+
+
 const modalCloseBtn = document.querySelector(".modal-close-btn");
 modalCloseBtn.addEventListener("click", function () {
   modalOverlay.classList.remove("active");
+});
+
+const sideModalCloseBtn = document.querySelector(".side-modal-close-btn");
+sideModalCloseBtn.addEventListener("click", function () {
+  sideModal.classList.remove("active");
 });
 
 $(document).ready(function() {
